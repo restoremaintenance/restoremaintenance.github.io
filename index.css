@@ -85,7 +85,7 @@
    }
 
    #home {
-     display:none;
+     display:block;
    }
 
    .home-banner >h1 {
@@ -277,6 +277,9 @@
      margin-top:10px;
    }
 
+   #about {
+     display:none;
+   }
 
    .abt-container {
      margin:40px 40px 0px;
