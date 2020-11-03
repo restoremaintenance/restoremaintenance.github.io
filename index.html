@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8" />
+     <link rel="stylesheet" type="text/css" href="./index.css"/>
+     <link rel="shortcut icon" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="description" content="Web site created using create-react-app"/>
+     <title>Restore Maintenance</title>
+  </head>
+  <body>
+    <header class="head">
+      <div class="banner">
+        <h1 class="number">Restore Maintenance</h1>
+        <div class="number-box">
+          <span>(708)603-8627</span>
+          <span>Call Us Today!</span>
+        </div>
+      </div>
+      <img class="hamburger" src="./hamburgermenu.svg" />
+      <nav class="nav-bar">
+        <ul class="nav-list">
+          <li onclick="mountHome()"><a>Home</a></li>
+          <li onclick="mountServices()"><a>Our Services</a></li>
+          <li onclick="mountAbout()"><a>About/Contact</a></li>
+          <li style="display:none;"><a>Happy Clients</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div id="home">
+        <div class='home-banner'>
+          <h1>Specialists in Cleaning,Restoration,and Maintenance</h1>
+          <span>We now do snow removal the entire season for a limited number of clients !</span>
+        </div>
+        <div class="content-container">
+          <div class="content-one">
+            <div class="intro-container">
+              <span>We are based out of Chicago.</span>
+              <span>but</span>
+              <span>We serve the entire state of Illinois.</span>
+            </div>
+            <div class="phrase-container">
+              <span>No matter where, we get
+                the job done right.</span>
+            </div>
+            <div class="covid-container">
+              <header>Attention! COVID-19</header>
+              <p>Yes! We are currently in business during the Covid-19 pandemic.
+                  All of our employees take all necessary precautions (masks, gloves)
+                  when working to ensure our clients are absolutely safe.
+              </p>
+            </div>
+          </div>
+          <div class="content-two">
+            <div class="img-overlay">
+              <img src="./chicago.jpg" alt="chicagopicture">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="services">
+        <div class='home-banner'>
+          <h1>Services We Offer</h1>
+        </div>
+        <div class="svc-container">
+          <div class="svc-content-one">
+            <div class="main-services">
+              <div class="floor-maintenance">
+                <header>Floor Maintenance</header>
+                <ul>
+                  <li>Hardwood</li>
+                  <li>Laminate</li>
+                  <li>Vinyl Tiles</li>
+                  <li>Vinyl Plank</li>
+                  <li>Porcelain</li>
+                  <li>Marble</li>
+                  <li>Granite</li>
+                </ul>
+              </div>
+              <div class="cleaning-services">
+                <header>Cleaning Services</header>
+                <ul>
+                  <li>Continued maintenance on grease traps.</li>
+                </ul>
+                <p>For any other services not mentioned,
+                  please contact us, as we clean many
+                  different surfaces and items.
+                </p>
+              </div>
+            </div>
+
+            <div class="snow-services">
+              <header>Winter Snow Removal</header>
+              <ul>
+                <li>Sidewalks/Pathways</li>
+                <li>Steps/Stairs</li>
+                <li>Parking Lots</li>
+                <li>Parking Spaces</li>
+              </ul>
+              <p>Good news Chicago! We now offer complete snow removal services!
+                You have enough on your hands. Let us make sure you leave your
+                home safely and your customers arrive at your business with safe
+                passage.
+              </p>
+              <p>We are currently booking clients for the entire fall/winter season. All
+                snow and ice services are performed whenever it snows, no
+                notification needed.
+              </p>
+            </div>
+            <div class="repeat-services">
+              <header>Our Repeat Maintenance Plan</header>
+              <p>By far, the best way to keep your business operating in top shape is our Repeat Maintenance Plan.
+                Whether it's monthly, bi-weekly, weekly, or any number of days, we will be there to make sure the
+                job gets done right.
+              </p>
+              <p>
+                *Repeat Maintenance Plan pricing is based on specific client needs. Please consult with us today.
+              </p>
+            </div>
+          </div>
+          <div class="svc-content-two">
+            <div class="svc-img-overlay"><img src="./vacuum.jpg"/></div>
+            <div class="svc-img-overlay"><img src="./cleaning.jpg"/></div>
+            <div class="svc-img-overlay"><img src="./bucket.png"/></div>
+            <div class="svc-img-overlay"><img src="./vacuum2.jpg"/></div>
+          </div>
+        </div>
+      </div>
+      <div id="about">
+        <div class='home-banner'>
+          <h1>About Us</h1>
+        </div>
+        <div class="abt-container">
+          <div class="abt-content-one">
+            <header>In Business Since 2001</header>
+            <p>Restore Maintenance has been serving the Chicagoland community since
+              2001 It all began with minimal equipment and a will to provide the most
+              personalized service to our circle of clients. Although we service a great
+              number of customers and businesses, we pay attention to every detail, and
+              treat everyone with courtesy and kindness.
+            </p>
+            <p>We serve the entire state of Illinois.</p>
+            <p>No matter where, we get the job done right.</p>
+            <div class="contact-container">
+              <header>Contact Us</header>
+              <a>hamptondeandre85@gmail.com</a>
+            </div>
+          </div>
+          <div class="abt-content-two">
+            <div class="abt-img-overlay"><img src="./chicago2.jpg" alt="Picture of Chicago"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script type="text/javascript">
+    function mountHome() {
+      document.getElementById("about").style.display="none";
+      document.getElementById("services").style.display="none";
+      document.getElementById("home").style.display="block";
+    }
+
+    function mountServices() {
+      document.getElementById("about").style.display="none";
+      document.getElementById("home").style.display="none";
+      document.getElementById("services").style.display="block";
+    }
+
+    function mountAbout() {
+      document.getElementById("services").style.display="none";
+      document.getElementById("home").style.display="none";
+      document.getElementById("about").style.display="block";
+    }
+  </script>
+</html>

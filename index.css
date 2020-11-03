@@ -1,0 +1,511 @@
+   * {
+     --navy1:#050B43;
+     --green1:#2FAE6F;
+     --grey1:#D1D1D1;
+     font-family:Segoe UI;
+   }
+
+   body {
+     margin:0;
+   }
+
+   .head {
+    background:var(--navy1);
+   }
+
+   .banner {
+     display:grid;
+     grid-template-columns:1fr 150px;
+   }
+   .banner >h1 {
+     font-size:40px;
+     text-align: center;
+     color:white;
+     padding:20px 0;
+     margin:0;
+     font-weight:normal;
+   }
+
+   .number-box {
+     display:flex;
+     flex-direction:column;
+     margin-right:40px;
+     justify-content: center;
+   }
+
+   .number-box >span {
+     color:white;
+   }
+
+   .hamburger {
+     height:20px;
+     width:30px;
+     background:none;
+     display:none;
+   }
+
+   .nav-bar {
+     background:white;
+     display:flex;
+     justify-content: center;
+   }
+
+   .nav-list {
+     list-style: none;
+     padding:0;
+     margin:0;
+     display:flex;
+     margin-right:20px;
+   }
+
+   .nav-list >li {
+     padding:7px 10px;
+     cursor:pointer;
+   }
+
+   .nav-list >li:hover {
+     background:var(--navy1);
+     color:white;
+   }
+
+   .nav-list >li:hover >a{
+     color:white;
+   }
+
+   .nav-list >li >a {
+     color:var(--navy1);
+     font-size:17px;
+     font-weight:bold;
+     height:100%;
+   }
+
+   .main-container {
+     padding-top:20px;
+     padding-bottom:40px;
+   }
+
+   #home {
+     display:none;
+   }
+
+   .home-banner >h1 {
+     color:var(--navy1);
+     font-size:28px;
+     text-align:center;
+     margin:0 0;
+     padding:0px 0 0px;
+     line-height: 26px;
+   }
+   .home-banner >span {
+    color:var(--green1);
+    text-align: center;
+    width:100%;
+    display:block;
+   }
+
+   .content-container {
+     display:flex;
+     margin:80px 80px 0 80px;
+     background:white;
+     justify-content:center;
+   }
+
+   .content-one {
+     max-width:430px;
+     margin-right:40px;
+   }
+
+   .intro-container {
+     display:flex;
+     flex-direction:column;
+   }
+   .intro-container >span {
+     font-size:22px;
+   }
+
+   .intro-container >span:nth-child(odd) {
+     color:var(--navy1);
+     font-weight:bold;
+   }
+
+   .intro-container >span:nth-child(2) {
+     font-weight:bold;
+     color:var(--green1);
+   }
+
+   .phrase-container {
+     padding:20px;
+     margin-top:20px;
+     max-width:270px;
+     background:var(--grey1);
+     font-weight:bold;
+   }
+
+   .phrase-container >span {
+     color:var(--navy1);
+     font-size:26px;
+     font-weight:bold;
+     letter-spacing:-1.5px;
+   }
+
+   .covid-container {
+     margin-top:20px;
+   }
+
+   .covid-container >header {
+     color:var(--green1);
+     font-size:20px;
+     font-weight:bold;
+   }
+
+   .covid-container >p {
+     color:var(--navy1);
+     font-weight:normal;
+     font-size:16px;
+     line-height:18px;
+     margin:0;
+   }
+
+
+   .content-two {
+     margin-left:40px;
+     max-width:500px;
+   }
+   .img-overlay {
+     min-height:300px;
+   }
+
+   .img-overlay >img {
+     width:100%;
+     opacity:.5;
+   }
+
+
+   #services {
+     display:none;
+   }
+
+   .svc-container{
+     display:flex;
+     justify-content: center;
+
+     margin:40px 40px 0;
+   }
+   .svc-content-one {
+     max-width:650px;
+
+     margin-right:20px;
+   }
+
+   .svc-content-one header{
+     font-size:22px;
+     font-weight:bold;
+     margin:0;
+     color:var(--green1);
+   }
+
+   #services ul {
+     margin:0;
+     padding:0 0 0 15px;
+   }
+
+   #services li {
+     list-style-type:none;
+     color:var(--navy1);
+   }
+
+
+
+   #services p{
+     color:var(--navy1);
+     margin:15px 0;
+   }
+
+   #services .cleaning-services p{
+     font-weight:bold;
+   }
+
+   .main-services {
+     display:flex;
+     width:100%;
+     justify-content:space-between;
+   }
+
+   .main-services >div {
+     margin-bottom:20px;
+   }
+
+   .floor-maintenance {
+     width:195px;
+   }
+
+   .cleaning-services {
+     max-width:310px;
+   }
+
+
+
+   .snow-services {
+     padding:10px 0 0 0;
+     margin-top:0px;
+     max-width:500px;
+     border-top:solid 1px black;
+     border-bottom:solid 1px black;
+   }
+
+   .svc-content-two {
+     max-width:600px;
+     max-height:500px;
+     display:grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows:1fr 1fr;
+     grid-gap:10px;
+     margin-left:20px;
+   }
+
+   .svc-img-overlay {
+     overflow:hidden;
+     background:var(--navy1);
+   }
+
+   .svc-img-overlay >img {
+     width:130%;
+     opacity:.4;
+   }
+
+   .repeat-services {
+     margin-top:10px;
+   }
+
+
+   .abt-container {
+     margin:40px 40px 0px;
+
+     display:flex;
+     justify-content: center;
+
+   }
+
+   .abt-content-one {
+     max-width:500px;
+     margin-right:40px;
+   }
+
+   .abt-content-one >header{
+     font-size:22px;
+     font-weight:bold;
+     color:var(--green1);
+     margin:0;
+   }
+
+
+   .abt-content-one p {
+     margin:0;
+     color:var(--navy1);
+   }
+
+   .abt-content-one p:nth-child(2) {
+     margin-bottom:20px;
+     text-indent:20px;
+   }
+
+   .abt-content-one p:nth-child(3) {
+     font-weight:bold;
+
+   }
+
+   .abt-content-one p:nth-child(4) {
+     margin-bottom:20px;
+     font-weight:bold;
+   }
+
+   .abt-content-two {
+     width:500px;
+     margin-left:40px;
+   }
+
+   .abt-img-overlay {
+     height:400px;
+     overflow: hidden;
+     background:var(--navy1);
+   }
+   .abt-img-overlay >img {
+     width:100%;
+     opacity:.2;
+   }
+
+   .contact-container >header{
+     font-size:22px;
+     font-weight:bold;
+     color:var(--green1);
+   }
+
+   .contact-container >a {
+     color:var(--navy1);
+   }
+
+
+
+   @media only screen and (max-width: 1265px) {
+     .svc-container {
+       flex-direction:column;
+       align-items:center;
+     }
+
+     .svc-content-one {
+       margin-right:0;
+     }
+
+     .svc-content-two {
+       margin-left:0;
+       margin-top:40px;
+     }
+   }
+
+   @media only screen and (max-width: 900px) {
+     .abt-container {
+       flex-wrap:wrap;
+     }
+
+     .abt-content-one {
+       margin-right:0;
+     }
+
+     .abt-content-two {
+       margin-left:0;
+       margin-top:40px;
+       width:320px;
+     }
+   }
+
+   @media only screen and (max-width: 900px) {
+     .content-container {
+       flex-wrap:wrap;
+       margin:0 18px;
+     }
+
+     .content-one {
+       margin-top:25px;
+       margin-right:0;
+       margin:25px 10px 0;
+     }
+
+     .content-two {
+       margin-top:20px;
+       margin-left:0;
+       margin:20px 10px 0 ;
+     }
+
+
+   }
+
+   @media only screen and (max-width: 790px) {
+     .home-banner >h1 {
+       font-size:24px;
+       line-height: 26px;
+     }
+
+     .intro-container >span {
+       font-size:18px;
+     }
+
+     .phrase-container >span {
+       font-size:23px;
+     }
+
+     .covid-container >header {
+       font-size:18px;
+     }
+
+     .covid-container >p {
+       margin-top:5px;
+     }
+
+     .svc-content-one header{
+       font-size:18px;
+     }
+
+     .abt-content-one >header{
+       font-size:18px;
+
+     }
+   }
+
+   @media only screen and (max-width: 675px) {
+     .banner {
+       grid-template-columns:1fr;
+     }
+
+     .banner >h1 {
+       padding:10px 0;
+     }
+
+     .number-box {
+       margin:0;
+       margin-bottom:10px;
+       text-align:center;
+     }
+
+     .number-box >span {
+       font-size:15px;
+     }
+
+     .home-banner >h1 {
+       font-size:20px;
+       line-height: 26px;
+       margin-bottom:10px;
+       line-height:22px;
+     }
+
+     .svc-content-two {
+       grid-template-columns: 300px;
+       grid-template-rows:repeat(4,260px);
+       margin-bottom:40px;
+     }
+
+
+   }
+
+   @media only screen and (max-width: 590px) {
+     .main-services {
+       flex-direction:column;
+     }
+   }
+
+   @media only screen and (max-width: 540px) {
+     .head {
+       position:relative;
+     }
+
+
+     .phrase-container {
+       margin-top:10px;
+     }
+
+     .img-overlay {
+       min-height:30px;
+     }
+
+     .svc-container {
+       margin:40px 15px 0;
+     }
+   }
+
+
+
+   @media only screen and (max-width: 436px) {
+     .banner >h1 {
+       font-size:32px;
+       line-height:30px;
+     }
+
+     .abt-container {
+       margin:40px 20px 0;
+     }
+   }
+
+   @media only screen and (max-width: 365px) {
+      .nav-list >li >a {
+        font-size:14px;
+      }
+   }
