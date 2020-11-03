@@ -88,6 +88,10 @@
      display:block;
    }
 
+   .home-banner {
+     margin:0 18px;
+   }
+
    .home-banner >h1 {
      color:var(--navy1);
      font-size:28px;
