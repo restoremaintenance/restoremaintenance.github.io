@@ -181,7 +181,7 @@
 
    .img-overlay >img {
      width:100%;
-     opacity:.5;
+
    }
 
 
@@ -259,7 +259,7 @@
 
    .svc-content-two {
      max-width:600px;
-     max-height:500px;
+
      display:grid;
      grid-template-columns: 1fr 1fr;
      grid-template-rows:1fr 1fr;
@@ -267,14 +267,22 @@
      margin-left:20px;
    }
 
+
+   .svc-content-two >.svc-img-overlay:nth-child(1){
+
+   }
+
+
    .svc-img-overlay {
-     overflow:hidden;
-     background:var(--navy1);
+
+
+     width:100%;
    }
 
    .svc-img-overlay >img {
-     width:130%;
-     opacity:.4;
+     width:100%;
+
+
    }
 
    .repeat-services {
@@ -473,8 +481,8 @@
      }
 
      .svc-content-two {
-       grid-template-columns: 300px;
-       grid-template-rows:repeat(4,260px);
+       grid-template-columns: 1fr;
+
        margin-bottom:40px;
        max-height:none;
      }
