@@ -176,11 +176,11 @@
      max-width:500px;
    }
    .img-overlay {
-     min-height:300px;
+     max-width:100%;
    }
 
-   .img-overlay >img {
-     width:100%;
+   .img-overlay img {
+     max-width:100%;
 
    }
 
