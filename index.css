@@ -1,5 +1,5 @@
    * {
-     --navy1:#050B43;
+     --navy1:#3e49ac;
      --green1:#2FAE6F;
      --grey1:#D1D1D1;
      font-family:Segoe UI;
@@ -10,17 +10,22 @@
    }
 
    .head {
-    background:var(--navy1);
+    background:white;
    }
 
    .banner {
-     display:grid;
-     grid-template-columns:1fr 150px;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     position:relative;
+     flex-wrap:wrap;
    }
    .banner >h1 {
      font-size:40px;
      text-align: center;
-     color:white;
+     display:block;
+
+     color:var(--navy1);
      padding:20px 0;
      margin:0;
      font-weight:normal;
@@ -29,12 +34,14 @@
    .number-box {
      display:flex;
      flex-direction:column;
+      position:absolute;
+      right:0;
      margin-right:40px;
      justify-content: center;
    }
 
    .number-box >span {
-     color:white;
+     color:var(--navy1);
    }
 
    .hamburger {
@@ -48,6 +55,7 @@
      background:white;
      display:flex;
      justify-content: center;
+     
    }
 
    .nav-list {
@@ -93,7 +101,7 @@
    }
 
    .home-banner >h1 {
-     color:var(--navy1);
+     color:var(--green1);
      font-size:28px;
      text-align:center;
      margin:0 0;
@@ -196,7 +204,7 @@
      margin:40px 40px 0;
    }
    .svc-content-one {
-     max-width:650px;
+     
 
      margin-right:20px;
    }
@@ -205,7 +213,7 @@
      font-size:22px;
      font-weight:bold;
      margin:0;
-     color:var(--green1);
+     color:var(--navy1);
    }
 
    #services ul {
@@ -215,13 +223,11 @@
 
    #services li {
      list-style-type:none;
-     color:var(--navy1);
+     color:black;
    }
 
-
-
    #services p{
-     color:var(--navy1);
+     color:black;
      margin:15px 0;
    }
 
@@ -231,7 +237,7 @@
 
    .main-services {
      display:flex;
-     width:100%;
+     max-width:650px;
      justify-content:space-between;
    }
 
@@ -247,8 +253,6 @@
      max-width:310px;
    }
 
-
-
    .snow-services {
      padding:10px 0 0 0;
      margin-top:0px;
@@ -257,22 +261,7 @@
      border-bottom:solid 1px black;
    }
 
-   .svc-content-two {
-     max-width:600px;
-
-     display:grid;
-     grid-template-columns: 1fr 1fr;
-     grid-template-rows:1fr 1fr;
-     grid-gap:10px;
-     margin-left:20px;
-   }
-
-
-
-
    .svc-img-overlay {
-
-
      width:100%;
    }
 
@@ -368,10 +357,7 @@
        margin-right:0;
      }
 
-     .svc-content-two {
-       margin-left:0;
-       margin-top:40px;
-     }
+     
    }
 
 
@@ -417,6 +403,15 @@
        font-size:24px;
        line-height: 26px;
      }
+
+     .banner {
+       flex-direction:column;
+     }
+     
+     .number-box {
+       position:relative;
+     }
+
 
      .intro-container >span {
        font-size:18px;
@@ -470,12 +465,7 @@
        line-height:22px;
      }
 
-     .svc-content-two {
-       grid-template-columns: 1fr;
-
-       margin-bottom:40px;
-       max-height:none;
-     }
+    
 
 
    }
