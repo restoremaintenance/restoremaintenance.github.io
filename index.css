@@ -13,6 +13,8 @@
     background:white;
    }
 
+   
+
    .banner {
      display:flex;
      align-items: center;
@@ -101,11 +103,13 @@
    }
 
    .home-banner >h1 {
-     color:var(--green1);
+     color:white;
+     width:100%;
+     background:var(--navy1);
      font-size:28px;
      text-align:center;
      margin:0 0;
-     padding:0px 0 0px;
+     padding:10px 0;
      line-height: 26px;
    }
    .home-banner >span {
@@ -166,7 +170,7 @@
    }
 
    .covid-container >header {
-     color:var(--green1);
+     color:red;
      font-size:20px;
      font-weight:bold;
    }
@@ -337,13 +341,17 @@
    }
 
    .abt-img-overlay {
-     height:400px;
+     min-height:100%;
+     width:100%;
+     
      overflow: hidden;
      background:var(--navy1);
    }
    .abt-img-overlay >img {
      width:100%;
-     
+     min-height:100%;
+     object-fit:contain;
+    
    }
 
    .contact-container >header{
