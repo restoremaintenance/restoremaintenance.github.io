@@ -13,7 +13,10 @@
     background:white;
    }
 
-   
+   .wrapper {
+     max-width:1200px;
+     margin:auto;
+   }
 
    .banner {
      display:flex;
@@ -21,6 +24,7 @@
      justify-content: center;
      position:relative;
      flex-wrap:wrap;
+     
    }
    .banner >h1 {
      font-size:40px;
