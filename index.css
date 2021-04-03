@@ -2,7 +2,8 @@
      --navy1:#3e49ac;
      --green1:#2FAE6F;
      --grey1:#D1D1D1;
-     font-family:Segoe UI;
+     --seriffont: 'Kiwi Maru', serif;
+     --sansfont: 'Source Sans Pro', sans-serif;
    }
 
    body {
@@ -30,11 +31,11 @@
      font-size:40px;
      text-align: center;
      display:block;
-
      color:var(--navy1);
      padding:20px 0;
      margin:0;
-     font-weight:normal;
+     font-weight:500;
+     font-family:var(--seriffont);
    }
 
    .number-box {
@@ -48,6 +49,7 @@
 
    .number-box >span {
      color:var(--navy1);
+     font-family:var(--seriffont);
    }
 
    .hamburger {
@@ -61,7 +63,7 @@
      background:white;
      display:flex;
      justify-content: center;
-     
+     font-family:var(--sansfont);
    }
 
    .nav-list {
@@ -87,10 +89,10 @@
    }
 
    .nav-list >li >a {
-     color:var(--navy1);
+     color:black;
      font-size:17px;
-     font-weight:bold;
      height:100%;
+     font-weight:bold;
    }
 
    .main-container {
@@ -106,7 +108,7 @@
      margin:0 18px;
    }
 
-   .home-banner >h1 {
+   .home-banner >h2 {
      color:white;
      width:100%;
      background:var(--navy1);
@@ -115,6 +117,8 @@
      margin:0 0;
      padding:10px 0;
      line-height: 26px;
+     font-family:var(--seriffont);
+     font-weight:400;
    }
    .home-banner >span {
     color:black;
@@ -122,6 +126,9 @@
     width:100%;
     display:block;
     margin-top:10px;
+    font-family: var(--sansfont);
+    font-size:18px;
+    font-weight:600;
    }
 
    .content-container {
@@ -142,6 +149,7 @@
    }
    .intro-container >span {
      font-size:22px;
+     font-family:var(--sansfont);
    }
 
    .intro-container >span:nth-child(odd) {
@@ -177,6 +185,7 @@
      color:red;
      font-size:20px;
      font-weight:bold;
+     font-family:var(--seriffont);
    }
 
    .covid-container >p {
@@ -185,6 +194,8 @@
      font-size:16px;
      line-height:18px;
      margin:0;
+     font-family:var(--sansfont);
+     font-weight:500;
    }
 
 
@@ -227,11 +238,13 @@
      font-weight:bold;
      margin:0;
      color:var(--navy1);
+     font-family:var(--seriffont);
    }
 
    #services ul {
      margin:0;
      padding:0 0 0 15px;
+     font-family:var(--sansfont);
    }
 
    #services li {
@@ -246,6 +259,7 @@
 
    #services .cleaning-services p{
      font-weight:bold;
+     font-family:var(--sansfont);
    }
 
    .main-services {
@@ -260,7 +274,7 @@
    }
 
    .floor-maintenance {
-     width:195px;
+     width:215px;
      
    }
 
@@ -268,13 +282,18 @@
      max-width:310px;
    }
 
+
    .snow-services {
     text-align:center;
      padding:10px 0 0 0;
      margin-top:0px;
      align-self:start;
-     border-top:solid 1px black;
-     border-bottom:solid 1px black;
+     border-top:solid 1px lightgrey;
+     border-bottom:solid 1px lightgrey;
+   }
+
+   .snow-services p {
+     font-family:var(--sansfont);
    }
 
    .svc-img-overlay {
@@ -292,6 +311,10 @@
      display:flex;
      flex-direction: column;
      align-items: center;
+   }
+
+   .repeat-services p {
+     font-family:var(--sansfont);
    }
 
    #about {
@@ -316,12 +339,14 @@
      font-weight:bold;
      color:var(--navy1);
      margin:0;
+     font-family:var(--seriffont);
    }
 
 
    .abt-content-one p {
      margin:0;
      color:black;
+     font-family:var(--sansfont);
    }
 
    .abt-content-one p:nth-child(2) {
@@ -362,10 +387,12 @@
      font-size:22px;
      font-weight:bold;
      color:var(--navy1);
+     font-family:var(--seriffont);
    }
 
    .contact-container >a {
      color:var(--navy1);
+     font-family:var(--sansfont);
    }
 
 
@@ -535,7 +562,7 @@
      }
 
      .svc-container {
-       margin:40px 15px 0;
+       margin:0px 15px 0;
      }
    }
 
